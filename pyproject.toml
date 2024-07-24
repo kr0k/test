@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "revolut"
+version = "0.1.0"
+description = ""
+authors = ["Yaroslav Budyanskiy"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.1"
+setuptools = "^71.0.4"
+redis = "^5.0.7"
+
+
+[tool.poetry.group.dev.dependencies]
+testcontainers = "^4.7.2"
+testcontainers-redis = "^0.0.1rc1"
+pytest = "^8.3.1"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
